@@ -93,6 +93,8 @@ a:focus {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	overflow: hidden;
+	width: 100vw;
 }
 
 .section--intro {
@@ -301,6 +303,9 @@ a:focus {
 /* Adjust the layout for smaller screens */
 
 @media screen and (max-width: 50em) {
+	.section--intro {
+		min-height: 0;
+	}
 	.codrops-header__tagline,
 	.github {
 		margin: 1em 0 0;
