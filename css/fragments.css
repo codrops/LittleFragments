@@ -1,0 +1,34 @@
+.fragment-wrap {
+	width: 30vw;
+	height: 80vh;
+	max-width: 800px;
+	max-height: 1000px;
+	min-height: 550px;
+	position: relative;
+	margin: 0 30vw 0 0;
+}
+
+.fragment-wrap--right {
+	margin: 0 0 0 30vw;
+}
+
+.fragment,
+.fragment__piece {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.fragment {
+	transition: transform 0.2s ease-out;
+}
+
+.fragment-wrap,
+.fragment__piece {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+}

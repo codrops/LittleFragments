@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Little Fragments | Codrops</title>
+		<meta name="description" content="Demo of the tutorial on how to create a simple image poster effect with little image fragments" />
+		<meta name="keywords" content="effect, web design, javascript, css, poster, cut, fragment, parallax" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/fragments.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<section class="section section--intro">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MirrorEffect/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=29649" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Little Fragments</h1>
+					<p class="codrops-header__tagline">Inspired by <a href="http://monstersareafraid.tumblr.com/post/115142712223/the-grand-canyon">The Grand Canyon</a></p>
+					<a class="github" href="https://github.com/codrops/LittleFragments/">/GitHub</a>
+				</header>
+				<div class="content">
+					<div id="frag-1" class="fragment-wrap" style="background-image: url(img/5.jpg)"></div>
+					<h2 class="title">blazed</h2>
+					<p class="text"><span class="deco-bg deco-bg--color-1">“Waking up this morning, I smile. Twenty-four brand new hours are before me. I vow to live fully in each moment and to look at all beings with eyes of compassion.” ― Thich Nhat Hanh</span></p>
+				</div>
+			</section><!-- /intro -->
+			<section class="section section--flow">
+				<div class="content">
+					<div id="frag-2" class="fragment-wrap fragment-wrap--right" style="background-image: url(img/4.jpg)"></div>
+					<h2 class="title title--left">hollos</h2>
+					<p class="text text--left"><span class="deco-bg deco-bg--color-2">“Every thought, every word, and every action that adds to the positive and the wholesome is a contribution to peace. Each and every one of us is capable of making such a contribution.” ― Aung San Suu Kyi</span></p>
+				</div>
+			</section>
+			<section class="section section--flow">
+				<div class="content">
+					<div id="frag-3" class="fragment-wrap" style="background-image: url(img/1.jpg)"></div>
+					<h2 class="title">zizzle</h2>
+					<p class="text"><span class="deco-bg deco-bg--color-3">“The meaning of life is just to be alive. It is so plain and so obvious and so simple. And yet, everybody rushes around in a great panic as if it were necessary to achieve something beyond themselves.” ― Alan W. Watts</span></p>
+				</div>
+			</section>
+			<section class="section section--flow">
+				<div class="content">
+					<div id="frag-4" class="fragment-wrap fragment-wrap--right" style="background-image: url(img/3.jpg)"></div>
+					<h2 class="title title--left">shimmy</h2>
+					<p class="text text--left"><span class="deco-bg deco-bg--color-4">“We’re in such a hurry most of the time we never get much chance to talk. The result is a kind of endless day-to-day shallowness, a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone.” — Robert M. Pirsig</span></p>
+				</div>
+			</section>
+			<section class="section section--flow">
+				<div class="content">
+					<div id="frag-5" class="fragment-wrap" style="background-image: url(img/2.jpg)"></div>
+					<h2 class="title">eponym</h2>
+					<p class="text"><span class="deco-bg deco-bg--color-5">“To escape from the world means that one's mind is not concerned with the opinions of the world.” ― Koso Joyo Daishi</span></p>
+				</div>
+			</section>
+			<section class="section section--related">
+				<h3 class="section__heading">If you enjoyed this demo you might also like:</h3>
+				<a class="media-item" href="http://tympanus.net/Development/TiltHoverEffects/">
+					<img class="media-item__img" src="img/related/TiltHoverEffect.jpg">
+					<h3 class="media-item__title">Tilt Hover Effects</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/SegmentEffect/">
+					<img class="media-item__img" src="img/related/SegmentEffect.jpg">
+					<h3 class="media-item__title">Segment Effect</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			(function() {
+				imagesLoaded(document.querySelectorAll('.fragment-wrap'), { background: true }, function() {
+					document.body.classList.remove('loading');
+					new FragmentsFx(document.getElementById('frag-1'));
+					new FragmentsFx(document.getElementById('frag-2'), {
+						fragments: 15,
+						boundaries: {x1: 200, x2: 100, y1: 10, y2: 50},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 5,max: 20, fixedHeight: 5},
+								height: {min: 10,max: 100, fixedWidth: 5}
+							}
+						}
+					});
+					new FragmentsFx(document.getElementById('frag-3'), {
+						fragments: 20,
+						boundaries: {x1: 100, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 50,max: 100, fixedHeight: 0.5},
+								height: {min: 50,max: 100, fixedWidth: 0.5}
+							}
+						}
+					});
+					new FragmentsFx(document.getElementById('frag-4'), {
+						fragments: 10,
+						boundaries: {x1: 250, x2: 75, y1: 50, y2: 50},
+						randomIntervals: {
+							top: {min: 0,max: 90},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 30,max: 50, fixedHeight: 10},
+								height: {min: 30,max: 50, fixedWidth: 10}
+							}
+						},
+						parallax: true
+					});
+					new FragmentsFx(document.getElementById('frag-5'), {
+						fragments: 20,
+						boundaries: {x1: 50, x2: 300, y1: 0, y2: 0},
+						randomIntervals: {
+							top: {min: 0,max: 40},
+							left: {min: 0,max: 90},
+							dimension: {
+								width: {min: 10,max: 50, fixedHeight: 0.5},
+								height: {min: 5,max: 10, fixedWidth: 5}
+							}
+						},
+						parallax: true,
+						randomParallax: {min: 30, max: 300}
+					});
+				});
+			})();
+		</script>
+	</body>
+</html>
